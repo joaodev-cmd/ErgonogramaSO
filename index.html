@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árvore Genealógica de Sistemas Operacionais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>Árvore Genealógica de Sistemas Operacionais</h1>
+        <p>Clique para expandir</p>
+    </div>
+    <div class="arvore">
+        <ul class="pai">
+            <li>
+                <div class="sistema" onclick="toggleChildren(this)"
+                    data-tooltip="Ano: 1978
+                        Descrição: O primeiro sistema operacional da Apple, projetado para o Apple II. Era um sistema rudimentar com funcionalidades básicas de gerenciamento de arquivos em discos.">
+                    <h3><span class="indicador">+</span> Apple DOS</h3>
+                    <ul class="filhos">
+                        <li>
+                            <div class="sistema" onclick="toggleChildren(this)"
+                                data-tooltip="Ano: 1980
+                                    Descrição: Sistema Operacional para o Apple III, conhecido como SOS (Sophisticated Operating System). Oferecia suporte a multitarefa e um sistema de arquivos mais avançado.">
+                                <h3><span class="indicador">+</span>
+                                    AppleSOS</h3>
+                                <ul class="filhos">
+                                    <li>
+                                        <div class="sistema" onclick="toggleChildren(this)"
+                                            data-tooltip="Ano: 1983
+                                                Descrição: Substituto do Apple DOS, com suporte a discos rígidos e unidades de disco flexível. Foi mais robusto e versátil para a linha Apple II.">
+                                            <h3><span class="indicador">+</span>
+                                                ProDOS</h3>
+                                            <ul class="filhos">
+                                                <li>
+                                                    <div class="sistema"
+                                                        data-tooltip="Ano: 1988
+                                                        Descrição: Sistema operacional para o Apple IIGS, oferecendo uma interface gráfica e suporte a multitarefa.">
+                                                        <h3>GS/OS</h3>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="sistema" onclick="toggleChildren(this)"
+                    data-tooltip="Ano: 1969
+                    Descrição: Desenvolvido por uma equipe da AT&T Bell Labs, foi um sistema operacional multiusuário e multitarefa, escrito originalmente em linguagem de montagem e depois recodificado em C.">
+                    <h3><span class="indicador">+</span>Unix</h3>
+                    <ul class="filhos">
+                        <li>
+                            <div class="sistema" onclick="toggleChildren(this)"
+                                data-tooltip="Ano: 1977
+                                    Descrição: Derivado do Unix, desenvolvido na Universidade da Califórnia em Berkeley. Foi inicialmente um conjunto de extensões para o Unix antes de se tornar um sistema completo.">
+                                <h3><span class="indicador">+</span>
+                                    BSD</h3>
+                                <ul class="filhos">
+                                    <li>
+                                        <div class="sistema" onclick="toggleChildren(this)"
+                                            data-tooltip="Ano: 1989
+                                                Descrição: Sistema operacional desenvolvido pela NeXT, a empresa de Steve Jobs após sair da Apple. Possuía uma interface gráfica avançada para a época e serviu como base para o Mac OS X.">
+                                            <h3><span class="indicador">+</span>
+                                                NeXTSTEP</h3>
+                                            <ul class="filhos">
+                                                <li>
+                                                    <div class="sistema" onclick="toggleChildren(this)"
+                                                        data-tooltip="Ano: 2005
+                                                            Descrição: Versão do sistema operacional da Apple, Mac OS X 10.4, com diversas melhorias, incluindo o Spotlight e suporte a 64 bits.">
+                                                        <h3><span class="indicador">+</span>
+                                                            MacOS X
+                                                            Tiger</h3>
+                                                        <ul class="filhos">
+                                                            <li>
+                                                                <div class="sistema"
+                                                                    data-tooltip="Ano: 2019
+                                                                        Descrição: Derivado do iOS, otimizado para iPads, com recursos de multitarefa aprimorados e uma interface mais adequada para telas maiores.">
+                                                                    <h3>IpadDOS</h3>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="sistema"
+                                                                    data-tooltip="Ano: 2007
+                                                                        Descrição: Sistema operacional da Apple para dispositivos móveis como iPhone e iPod Touch, conhecido por sua interface de usuário intuitiva e a App Store.">
+                                                                    <h3>IOS</h3>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sistema" onclick="toggleChildren(this)"
+                                            data-tooltip="Ano: 1980
+                                                Descrição: Versão do Unix licenciada pela Microsoft para microcomputadores, que eventualmente se tornou base para outros sistemas operacionais.">
+                                            <h3><span class="indicador">+</span>Xenix</h3>
+                                            <ul class="filhos">
+                                                <li>
+                                                    <div class="sistema"
+                                                        data-tooltip="Ano: 1992
+                                                        Descrição: Sistema operacional Unix desenvolvido pela Sun Microsystems, conhecido por sua escalabilidade e recursos de rede.">
+                                                        <h3>Solaris</h3>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sistema" onclick="toggleChildren(this)"
+                                data-tooltip="Ano: 1987
+                                    Descrição: Sistema operacional Unix-like desenvolvido para fins educacionais por Andrew S. Tanenbaum, famoso por inspirar o desenvolvimento do Linux.">
+                                <h3><span class="indicador">+</span>
+                                    Minix</h3>
+                                <ul class="filhos">
+                                    <li>
+                                        <div class="sistema" onclick="toggleChildren(this)"
+                                            data-tooltip="Ano: 1991
+                                                Descrição: Sistema operacional de código aberto desenvolvido por Linus Torvalds, amplamente utilizado em servidores e dispositivos embarcados.">
+                                            <h3><span class="indicador">+</span>
+                                                Linux</h3>
+                                            <ul class="filhos">
+                                                <li>
+                                                    <div class="sistema" onclick="toggleChildren(this)"
+                                                        data-tooltip="Ano: 1994
+                                                            Descrição: Distribuição Linux criada na Alemanha, conhecida por seu YAST (Yet another Setup Tool) e suporte empresarial.">
+                                                        <h3><span class="indicador">+</span>
+                                                            SUSE</h3>
+                                                        <ul class="filhos">
+                                                            <li>
+                                                                <div class="sistema"
+                                                                    data-tooltip="Ano: 2005
+                                                                        Descrição: Versão comunitária do SUSE Linux, mantida pela comunidade open source e usada para desenvolvimento e testes.">
+                                                                    <h3>OpenSUSE</h3>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="sistema" onclick="toggleChildren(this)"
+                                                        data-tooltip="Ano: 1995
+                                                            Descrição: Uma das primeiras distribuições Linux empresariais, conhecida por seu suporte robusto e estabilidade.">
+                                                        <h3><span class="indicador">+</span>
+                                                            Red Hat</h3>
+                                                        <ul class="filhos">
+                                                            <li>
+                                                                <div class="sistema"
+                                                                    data-tooltip="Ano: 2003
+                                                                        Descrição: Distribuição Linux desenvolvida pela comunidade, patrocinada pela Red Hat, usada para testar novas tecnologias que podem ser incorporadas no Red Hat Enterprise Linux.">
+                                                                    <h3>Fedora</h3>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="sistema" onclick="toggleChildren(this)"
+                                                        data-tooltip="Ano: 1993
+                                                            Descrição: Uma das distribuições Linux mais antigas e influentes, conhecida por seu rigor em relação à estabilidade e liberdade de software.">
+                                                        <h3><span class="indicador">+</span>
+                                                            Debian</h3>
+                                                        <ul class="filhos">
+                                                            <li>
+                                                                <div class="sistema" onclick="toggleChildren(this)"
+                                                                    data-tooltip="Ano: 2004
+                                                                        Descrição: Distribuição Linux baseada em Debian, conhecida por sua facilidade de uso e suporte abrangente à comunidade.">
+                                                                    <h3><span class="indicador">+</span>
+                                                                        Ubuntu</h3>
+                                                                    <ul class="filhos">
+                                                                        <li>
+                                                                            <div class="sistema"
+                                                                                data-tooltip="Ano: 1998
+                                                                                    Descrição: Distribuição Linux baseada em Red Hat, voltada para facilidade de uso e configurações amigáveis para o usuário.">
+                                                                                <h3>Linux
+                                                                                    Mint</h3>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="sistema"
+                                                        data-tooltip="Ano: 1998
+                                                        Descrição: Distribuição Linux baseada em Red Hat, voltada para facilidade de uso e configurações amigáveis para o usuário.">
+                                                        <h3>Mandrake</h3>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sistema" onclick="toggleChildren(this)"
+                                data-tooltip="Ano: 1992
+                                    Descrição: Sistema operacional Unix desenvolvido pela Sun Microsystems, focado em escalabilidade e recursos de rede.">
+                                <h3><span class="indicador">+</span>
+                                    Solaris</h3>
+                                <ul class="filhos">
+                                    <li>
+                                        <div class="sistema"
+                                            data-tooltip="Ano: 2005
+                                            Descrição: Versão de código aberto do Solaris, desenvolvida pela Sun Microsystems antes de ser descontinuada pela Oracle.">
+                                            <h3>OpenSolaris</h3>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="sistema" onclick="toggleChildren(this)"
+                    data-tooltip="Ano: 1980
+                    Descrição: Sistema operacional comprado pela Microsoft e renomeado para MS-DOS, utilizado nos primeiros PCs da IBM.">
+                    <h3><span class="indicador">+</span> 86-DOS</h3>
+                    <ul class="filhos">
+                        <li>
+                            <div class="sistema" data-tooltip="Ano: 1981
+                                Descrição: Versão do MS-DOS licenciada para a IBM para uso em seus PCs.">
+                                <h3>IBM PC DOS</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sistema" onclick="toggleChildren(this)"
+                                data-tooltip="Ano: 1981
+                                    Descrição: Sistema operacional de disco da Microsoft para PCs, utilizado amplamente antes do advento das interfaces gráficas.">
+                                <h3><span class="indicador">+</span>
+                                    MS-DOS</h3>
+                                <ul class="filhos">
+                                    <li>
+                                        <div class="sistema" onclick="toggleChildren(this)"
+                                            data-tooltip="Ano: 1985
+                                                Descrição: Primeira versão do Microsoft Windows, introduziu uma interface gráfica simples sobre o MS-DOS.">
+                                            <h3><span class="indicador">+</span>
+                                                Windows 1.0</h3>
+                                            <ul class="filhos">
+                                                <li>
+                                                    <div class="sistema" onclick="toggleChildren(this)"
+                                                        data-tooltip="Ano: 1987
+                                                            Descrição: Introduziu janelas sobrepostas e melhor suporte a hardware gráfico.">
+                                                        <h3><span class="indicador">+</span>
+                                                            Windows 2.0</h3>
+                                                        <ul class="filhos">
+                                                            <li>
+                                                                <div class="sistema" onclick="toggleChildren(this)"
+                                                                    data-tooltip="Ano: 1990
+                                                                        Descrição: Melhorou a interface gráfica e o gerenciamento de memória, tornando-se um grande sucesso comercial.">
+                                                                    <h3><span class="indicador">+</span>
+                                                                        Windows
+                                                                        3.0
+                                                                    </h3>
+                                                                    <ul class="filhos">
+                                                                        <li>
+                                                                            <div class="sistema"
+                                                                                onclick="toggleChildren(this)"
+                                                                                data-tooltip="Ano: 1992
+                                                                                    Descrição: Versão aprimorada do Windows 3.0, com melhor suporte a multimídia e fontes TrueType.">
+                                                                                <h3><span class="indicador">+</span>
+                                                                                    Windows
+                                                                                    3.1</h3>
+                                                                                <ul class="filhos">
+                                                                                    <li>
+                                                                                        <div class="sistema"
+                                                                                            onclick="toggleChildren(this)"
+                                                                                            data-tooltip="Ano: 1995
+                                                                                                Descrição: Introduziu o botão Iniciar, a barra de tarefas e uma interface de usuário muito melhorada. Primeira versão a suportar plug-and-play.">
+                                                                                            <h3><span
+                                                                                                    class="indicador">+</span>
+                                                                                                Windows
+                                                                                                95</h3>
+                                                                                            <ul class="filhos">
+                                                                                                <li>
+                                                                                                    <div class="sistema"
+                                                                                                        onclick="toggleChildren(this)"
+                                                                                                        data-tooltip="Ano: 1998
+                                                                                                            Descrição: Melhorou a estabilidade e o suporte a hardware, além de integrar mais fortemente o Internet Explorer.">
+                                                                                                        <h3><span
+                                                                                                                class="indicador">+</span>
+                                                                                                            Windows
+                                                                                                            98
+                                                                                                        </h3>
+                                                                                                        <ul
+                                                                                                            class="filhos">
+                                                                                                            <li>
+                                                                                                                <div class="sistema"
+                                                                                                                    onclick="toggleChildren(this)"
+                                                                                                                    data-tooltip="Ano: 1999
+                                                                                                                        Descrição: Edição de segunda edição do Windows 98, com várias correções de bugs e melhorias.">
+                                                                                                                    <h3><span
+                                                                                                                            class="indicador">+</span>
+                                                                                                                        Windows
+                                                                                                                        SE
+                                                                                                                    </h3>
+                                                                                                                    <ul
+                                                                                                                        class="filhos">
+                                                                                                                        <li>
+                                                                                                                            <div class="sistema"
+                                                                                                                                onclick="toggleChildren(this)"
+                                                                                                                                data-tooltip="Ano: 2000
+                                                                                                                                    Descrição: Sistema operacional voltado para o mercado empresarial, baseado no Windows NT com melhor estabilidade e segurança.">
+                                                                                                                                <h3><span
+                                                                                                                                        class="indicador">+</span>
+                                                                                                                                    Windows
+                                                                                                                                    2000
+                                                                                                                                </h3>
+                                                                                                                                <ul
+                                                                                                                                    class="filhos">
+                                                                                                                                    <li>
+                                                                                                                                        <div class="sistema"
+                                                                                                                                            onclick="toggleChildren(this)"
+                                                                                                                                            data-tooltip="Ano: 2001
+                                                                                                                                                Descrição: Versão extremamente popular do Windows, combinou a estabilidade do Windows NT com a interface amigável do Windows 98.">
+                                                                                                                                            <h3><span
+                                                                                                                                                    class="indicador">+</span>
+                                                                                                                                                Windows
+                                                                                                                                                XP
+                                                                                                                                            </h3>
+                                                                                                                                            <ul
+                                                                                                                                                class="filhos">
+                                                                                                                                                <li>
+                                                                                                                                                    <div class="sistema"
+                                                                                                                                                        onclick="toggleChildren(this)"
+                                                                                                                                                        data-tooltip="Ano: 2006
+                                                                                                                                                            Descrição: Introduziu uma interface gráfica renovada e várias melhorias de segurança, mas foi criticado por seu desempenho.">
+                                                                                                                                                        <h3><span
+                                                                                                                                                                class="indicador">+</span>
+                                                                                                                                                            Windows
+                                                                                                                                                            Vista
+                                                                                                                                                        </h3>
+                                                                                                                                                        <ul
+                                                                                                                                                            class="filhos">
+                                                                                                                                                            <li>
+                                                                                                                                                                <div class="sistema"
+                                                                                                                                                                    onclick="toggleChildren(this)"
+                                                                                                                                                                    data-tooltip="Ano: 2009
+                                                                                                                                                                        Descrição: Melhorou a interface e o desempenho em relação ao Vista, tornando-se uma das versões mais populares.">
+                                                                                                                                                                    <h3><span
+                                                                                                                                                                            class="indicador">+</span>
+                                                                                                                                                                        Windows
+                                                                                                                                                                        7
+                                                                                                                                                                    </h3>
+                                                                                                                                                                    <ul
+                                                                                                                                                                        class="filhos">
+                                                                                                                                                                        <li>
+                                                                                                                                                                            <div class="sistema"
+                                                                                                                                                                                onclick="toggleChildren(this)"
+                                                                                                                                                                                data-tooltip="Ano: 2012
+                                                                                                                                                                                    Descrição: Introduziu a interface Metro com foco em dispositivos touch, mas foi criticado pela remoção do menu Iniciar.">
+                                                                                                                                                                                <h3><span
+                                                                                                                                                                                        class="indicador">+</span>
+                                                                                                                                                                                    Windows
+                                                                                                                                                                                    8
+                                                                                                                                                                                </h3>
+                                                                                                                                                                                <ul
+                                                                                                                                                                                    class="filhos">
+                                                                                                                                                                                    <li>
+                                                                                                                                                                                        <div class="sistema"
+                                                                                                                                                                                            data-tooltip="Ano: 2013
+                                                                                                                                                                                                Descrição: Atualização do Windows 8 que trouxe de volta o botão Iniciar e melhorias na interface.">
+                                                                                                                                                                                            <h3>Windows
+                                                                                                                                                                                                8.1
+                                                                                                                                                                                            </h3>
+                                                                                                                                                                                        </div>
+                                                                                                                                                                            </div>
+                                                                                                                                                                </div>
+                                                                                                                                                    </div>
+                                                                                                                                        </div>
+                                                                                                                            </div>
+                                                                                                                            <div class="sistema"
+                                                                                                                                data-tooltip="Ano: 2000
+                                                                                                                                Descrição: Versão voltada para consumidores, foi a última baseada no MS-DOS e foi criticada por sua instabilidade.">
+                                                                                                                                <h3>Windows ME
+                                                                                                                                </h3>
+                                                                                                                            </div>
+                                                                                                                        </li>
+                                                                                                                    </ul>
+                                                                                                                </div>
+                                                                                                            </li>
+                                                                                                        </ul>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="tooltip"></div>
+    <br>
+    <br>
+    <br>
+    <footer class="footer">
+        <div class="container">
+            <p>Fontes: <a style="text-decoration: none; color: white;" href="https://www.tecmundo.com.br/linux/2031-a-historia-dos-sistemas-operacionais.htm">A história dos sistemas operacionais</a></p>
+            <p>Todos os direitos reservados &copy; 2024 Tharlis Fábio e João Victor</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
